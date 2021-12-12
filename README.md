@@ -22,7 +22,7 @@ env/Scripts/activate
 pip install -r requirements.txt
 # -----------------------------
 
-# execute models for database
+# execute models
 python manage.py makemigrations
 python manage.py migrate
 # -----------------------------
