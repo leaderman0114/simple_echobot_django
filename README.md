@@ -1,36 +1,48 @@
-# -------------------------
-# simple echo bot in django
-# -------------------------
+### simple echo bot in django
 
+```
+need telegram bot token in tgbot/management/commands/botpy at line 9
+```
 
-# need telegram bot token in tgbot/management/commands/botpy at line 9
-
-
-# create virtual environment
+### create virtual environment
+```bash
 python -m venv env
-# -------------------------
+```
 
-# linux and macOS
+### activate virtual environment
+linux 
+```bash
 source env/bin/activate
-# ---------------------
+```
 
-# windows
-env/Scripts/activate
-# ------------------
+windows
+```bash
+env\Scripts\activate
+```
 
-# install packages
+
+### install packages
+```bash
 pip install -r requirements.txt
-# -----------------------------
+```
 
-# execute models
+### execute models
+```bash
 python manage.py makemigrations
 python manage.py migrate
-# -----------------------------
 
-# run django project for admin panel
+or
+
+python manage.py makemigrations <appname>
+python manage.py migrate <appname>
+```
+
+### run django project for admin panel
+```bash
 python manage.py runserver
-# ------------------------
+```
 
-# run telegram bot project
+### run telegram bot project
+```bash
 python manage.py bot
-# ------------------
+```
